@@ -47,19 +47,20 @@ Modification
   <button onclick="q += '0'; console.log(q); ">0</button>
   <button onclick="q += '.'; console.log(q); ">.</button>
   <button onclick="
-    removeLeadingZero(q);
+    q = removeLeadingZero(q);
     q = eval(q); 
-    console.log(q); q = ''
+    console.log(q); 
+    q = '';
   ">=</button>
   <button onclick="q += ' / '; console.log(q); ">/</button>
   <br>
-  <button onclick="q = ''; console.log('Cleared.')" class="clear">Clear</button>
+  <button onclick="q = ''; console.log('Cleared.');" class="clear">Clear</button>
   
   <script>
     let q = '';
 
     function removeLeadingZero(q) {
-      return q.replace(/^0+(?!\.)/, '' || 0);
+      return q.replace(/^0+(?!\.)/, '');
     }
   </script>
 </html>
