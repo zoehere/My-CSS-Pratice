@@ -24,10 +24,11 @@
   <button onclick="add2()"> +2 </button>
   <button onclick="add3()"> +3 </button>
   <button onclick="reset()"> Reset Cart </button>
-  <script>
+  
+<script>
     let q = 0;
     function showQ() {
-      console.log(q);
+      console.log('Cart quantity: ' + q);
     }
     function add1() {
       q += 1;
