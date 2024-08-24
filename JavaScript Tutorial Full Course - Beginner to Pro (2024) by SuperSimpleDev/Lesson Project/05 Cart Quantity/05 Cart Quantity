@@ -41,6 +41,7 @@
     }
     function reset(){
       q = 0;
+      console.log('Cart was reset.');
     }
   </script>
 </html>
