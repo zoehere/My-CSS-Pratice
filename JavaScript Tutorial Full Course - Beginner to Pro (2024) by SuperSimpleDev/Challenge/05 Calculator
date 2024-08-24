@@ -1,0 +1,65 @@
+<!--
+Modification
+- After pressing =, start a new calculation.
+- Remove leading zeros (if there are any) to prevent eval() from calculation failure (e.g., 07.5+3).
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variables Project</title>
+  <style>
+    body{
+      margin: 10px;
+    }
+    p {
+      font-size: 24px;
+    }
+    button {
+      font-size: 20px;
+      margin: 5px;
+      height: 32px;
+      width: 32px;
+    }
+    .clear {
+      width: 90px;
+    }
+  </style>
+</head>
+
+<body>  
+  <p>Calculator</p>
+  <button onclick="q += '1'; console.log(q); ">1</button>
+  <button onclick="q += '2'; console.log(q); ">2</button>
+  <button onclick="q += '3'; console.log(q); ">3</button>
+  <button onclick="q += ' + '; console.log(q); ">+</button>
+  <br>
+  <button onclick="q += '4'; console.log(q); ">4</button>
+  <button onclick="q += '5'; console.log(q); ">5</button>
+  <button onclick="q += '6'; console.log(q); ">6</button>
+  <button onclick="q += ' - '; console.log(q); ">-</button>
+  <br>
+  <button onclick="q += '7'; console.log(q); ">7</button>
+  <button onclick="q += '8'; console.log(q); ">8</button>
+  <button onclick="q += '9'; console.log(q); ">9</button>
+  <button onclick="q += ' * '; console.log(q); ">*</button>
+  <br>
+  <button onclick="q += '0'; console.log(q); ">0</button>
+  <button onclick="q += '.'; console.log(q); ">.</button>
+  <button onclick="
+    removeLeadingZero(q);
+    q = eval(q); 
+    console.log(q); q = ''
+  ">=</button>
+  <button onclick="q += ' / '; console.log(q); ">/</button>
+  <br>
+  <button onclick="q = ''; console.log('Cleared.')" class="clear">Clear</button>
+  
+  <script>
+    let q = '';
+
+    function removeLeadingZero(q) {
+      return q.replace(/^0+(?!\.)/, '' || 0);
+    }
+  </script>
+</html>
