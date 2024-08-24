@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variables Project</title>
+  <style>
+    body{
+      margin: 10px;
+    }
+    p {
+      font-size: 24px;
+    }
+    button {
+      font-size: 20px;
+      margin: 2px;
+      height: 32px;
+    }
+  </style>
+</head>
+
+<body>  
+  <p>Cart Quantity</p>
+  <button onclick="showQ()"> Show Quanity </button>
+  <button onclick="add1()"> Add to Cart </button>
+  <button onclick="add2()"> +2 </button>
+  <button onclick="add3()"> +3 </button>
+  <button onclick="reset()"> Reset Cart </button>
+  <script>
+    let q = 0;
+    function showQ() {
+      console.log(q);
+    }
+    function add1() {
+      q += 1;
+    }
+    function add2(){
+      q += 2;
+    }
+    function add3(){
+      q += 3;
+    }
+    function reset(){
+      q = 0;
+    }
+  </script>
+</html>
