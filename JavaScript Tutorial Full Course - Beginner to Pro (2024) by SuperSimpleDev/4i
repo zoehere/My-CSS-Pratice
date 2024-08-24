@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wonderful Market</title>
+  <style>
+    p{
+      font-size: 32px;
+    }
+    button{
+      margin: 0 3px 0 3px;
+      font-size: 24px;
+      border-width: 3px;
+      height: 40px;
+    }
+    .butAdd {
+      background-color: yellow;
+      width: 140px;
+    }
+    .butBuy {
+      background-color: orange;
+      width: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Adults Plain Cotton T-shirt</p>
+  <p>Price: $7.99</p>
+  <button onclick="showAlertAdd()" class="butAdd">Add to cart</button>
+  <button onclick="showAlertBuy()" class="butBuy">Buy now</button>
+  
+  <script>
+    function showAlertAdd(){
+      alert("Added");
+    }
+    function showAlertBuy(){
+      console.log('Loading...');
+      alert("Purchased");
+    }
+  </script>
+</html>
