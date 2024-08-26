@@ -18,11 +18,13 @@
         background-color: green;
         border: none;
         padding: 8px 12px;
+        margin: 0 12px 24px 0;
         font-size: 28px;
-        transition: padding 0.15s;
+        transition: padding 0.15s, margin 0.15s;
     }
     .n2:hover {
-        padding: 20px 50px;
+        padding: 20px 50px 20px 50px;
+        margin: 0 0 0 0;
     }
 
     .n3 {
@@ -31,12 +33,12 @@
         border: none;
         padding: 8px 12px;
         font-size: 28px;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.537);
-        margin: 0;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.537);
+        margin: 0 0 5px 0;
         transition: margin 0.15s, box-shadow 0.15s;
     }
     .n3:active {
-        margin: 5px;
+        margin: 5px 0 0 5px;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
 
@@ -50,8 +52,8 @@
         transition: padding 0.15s, margin 0.15s;
     }
     .n4:hover {
-        padding: 8px 20px;
-        margin: 0 4px;
+        padding: 8px 24px;
+        margin: 0;
     }
 </style>
 
