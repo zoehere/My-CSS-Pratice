@@ -1,0 +1,100 @@
+<style>
+    body {
+        padding: 10px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .n1goodread {
+        padding: 8px;
+        margin: 2px 5px 2px 5px;
+    }
+    .n1a {
+        margin: 2px;
+    }
+
+    .n2 {
+        color: white;
+        background-color: green;
+        border: none;
+        padding: 8px 12px;
+        font-size: 28px;
+        transition: padding 0.15s;
+    }
+    .n2:hover {
+        padding: 20px 50px;
+    }
+
+    .n3 {
+        color: white;
+        background-color: green;
+        border: none;
+        padding: 8px 12px;
+        font-size: 28px;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.537);
+        margin: 0;
+        transition: margin 0.15s, box-shadow 0.15s;
+    }
+    .n3:active {
+        margin: 5px;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    .n4 {
+        color: white;
+        background-color: green;
+        border: none;
+        padding: 8px 12px;
+        font-size: 28px;
+        margin: 0 12px;
+        transition: padding 0.15s, margin 0.15s;
+    }
+    .n4:hover {
+        padding: 8px 20px;
+        margin: 0 4px;
+    }
+</style>
+
+
+<html>
+    <title>
+        Challenge Exercises 04
+    </title>
+    <body>
+        <h1>4h. Pagination</h1>
+        <h2>Goodreads Choiceawards</h2>
+        <button class="n1goodread">
+            Back
+        </button>
+        <a href="https://www.goodreads.com/choiceawards/best-books-2023" class="n1a" target="_blank">2023</a>
+        <a href="https://www.goodreads.com/choiceawards/best-books-2022" class="n1a" target="_blank">2022</a>
+        <a href="https://www.goodreads.com/choiceawards/best-books-2021" class="n1a" target="_blank">2021</a>
+        <a href="https://www.goodreads.com/choiceawards/best-books-2020" class="n1a" target="_blank">2020</a>
+        <a href="https://www.goodreads.com/choiceawards/best-books-2019" class="n1a" target="_blank">2019</a>
+        <button class="n1goodread">Next</button>
+        <div>
+            <h1>4i. Stretch</h1>
+            <button class="n2">
+                Stretch
+            </button>
+        </div>
+        <div>
+            <h1>4j. 3D Click</h1>
+            <button class="n3">
+                Shadow
+            </button>
+        </div>
+        <div>
+            <h1>4k. Margin and padding together</h1>
+            <button class="n4">
+                One
+            </button>
+            <button class="n4">
+                Two
+            </button>
+            <button class="n4">
+                Three
+            </button>
+        </div>
+    </body>
+</html>
