@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <style>
+  
+  </style>
+</head>
+
+<body>  
+  <h1>Rock Paper Scissors</h1>
+  <button onclick="rock()">Rock</button>
+  <button onclick="paper()">Paper</button>
+  <button onclick="scissors()">Scissors</button>
+</body>
+  <script>
+    function rock() {
+      let com = Math.floor(Math.random() * 3);
+      if (com == 0) {
+        alert('You picked rock. Computer picked rock. Tie.');
+      } else if (com == 1) {
+        alert('You picked rock. Computer picked paper. You lose.');
+      } else {
+        alert('You picked rock. Computer picked scissors. You win.');
+      }
+    }
+    function paper() {
+      let com = Math.floor(Math.random() * 3);
+      if (com == 0) {
+        alert('You picked paper. Computer picked rock. You win.');
+      } else if (com == 1) {
+        alert('You picked paper. Computer picked paper. Tie.');
+      } else {
+        alert('You picked paper. Computer picked scissors. You lose.');
+      }
+    }
+    function scissors() {
+      let com = Math.floor(Math.random() * 3);
+      if (com == 0) {
+        alert('You picked scissors. Computer picked rock. You lose.');
+      } else if (com == 1) {
+        alert('You picked scissors. Computer picked paper. You win.');
+      } else {
+        alert('You picked scissors. Computer picked scissors. Tie.');
+      }
+    }
+  </script>
+</html>
