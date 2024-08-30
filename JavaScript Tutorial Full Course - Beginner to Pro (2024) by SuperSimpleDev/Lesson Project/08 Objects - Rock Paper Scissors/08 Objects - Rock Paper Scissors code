@@ -39,7 +39,7 @@
       } else {
         c = 'scissors';
         result = 'You win';
-        cmputer.wins++;
+        computer.wins++;
       }
       alert(`You picked rock. Computer picked ${c}. ${result}.\nWins: ${computer.wins}, Losses: ${computer.losses}, Ties: ${computer.ties}`);
     }
@@ -56,7 +56,7 @@
       } else {
         c = 'scissors';
         result = 'You lose';
-        cmputer.losses++;
+        computer.losses++;
       }
       alert(`You picked paper. Computer picked ${c}. ${result}.\nWins: ${computer.wins}, Losses: ${computer.losses}, Ties: ${computer.ties}`);
     }
@@ -73,7 +73,7 @@
       } else {
         c = 'scissors';
         result = 'Tie';
-        cmputer.ties++;
+        computer.ties++;
       }
       alert(`You picked paper. Computer picked ${c}. ${result}.\nWins: ${computer.wins}, Losses: ${computer.losses}, Ties: ${computer.ties}`);
     }
